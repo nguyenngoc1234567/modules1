@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Username
+    <input type="text" name="user_name" id="user_name">
+    password
+    <input type="password" name="password" id="password">
+    <input type="button" onclick="xu_ly()" value="đắng nhâp">
+    <input type="button"  value="click3" id="btn3">
+    <!--bắt sự kiện thông qua thuộc tinh-->
+    <input onclick="xu_ly()" type="button" value="click me">
+    <script>
+        function xu_ly() {
+            var username = document.getElementById('user_name').value;
+            var password = document.getElementById('password').value;
+            alert(username);
+            alert(password);
+        }
+        //bat su kien nut click 3
+
+
+        // document.getElementById('btn3').addEventListener('click',function(){
+        // document.getElementById('btn3').addEventListener('click', function () {
+        //     alert(123)
+
+        // });
+        // document.getElementById('btn3').addEventListener('click', xu_ly());
+
+    </script>
+</body>
+
+</html>

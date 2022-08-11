@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- bat su kien thong qua thoc tinh -->
+    <input type="button" value="click me" onclick="alert (123)">
+
+    <!-- bat su kien thong qua khoi lenh -->
+    <input type="button" value="click me 2" onclick="xu_ly()">
+
+
+    <!-- bat su kien thong qua javascript -->
+    <input type="button" value="click me 3" id="btn">
+
+
+    <script>
+ // Bắt sự kiện nút Click 3
+        /*
+            document.getElementById('ID_THE').addEventListener('TEN_SU_KIEN',function(){
+            });
+        */
+
+        function xu_ly(){
+            alert(234)
+        }
+
+        document.getElementById('btn').addEventListener('click',function(){
+alert(345)
+        });
+    </script>
+
+</body>
+</html>
