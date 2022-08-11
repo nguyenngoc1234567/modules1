@@ -9,30 +9,10 @@
 </head>
 
 <body>
+
+
+
     <!-- nhap ho va ten :
-    <input type="text" name="name" id="name"><br>
-    nhap mat khau:
-    <input type="password" name="password" id="password"><br>
-    nhap dia chi :
-    <input type="text" name="address" id="address"><br>
-    ngay sinh :
-    <input type="date" id="birthday"><br>
-    <input type="button" value="dang ki" onclick="dang_nhap()">
-    <script>
-        function dang_nhap() {
-            var name = document.getElementById('name').value;
-            var password = document.getElementById('password').value;
-            var address = document.getElementById('address').value;
-            var birthday = document.getElementById('birthday').value;
-            alert(name);
-            alert(birthday);
-            document.write(password);
-            console.log(address);
-
-        } -->
-    
-
-        nhap ho va ten :
         <input type="text" name="name" id="name"><br>
         nhap mat khau :
       <input type="password" name="password" id="password"><br>  
@@ -51,11 +31,27 @@
             alert (password)
             alert(address)
             alert(ngaysinh)
+        } -->
+
+    </script>
+    nhap ten;
+    <input type="text" name="name" id="name"><br>
+    nhap mat khau ;
+    <input type="password" name="password" id="password"><br>
+    nhap ngay thang nam sinh ;
+    <input type="date" id="date"><br>
+    <input type="button" onclick="dang_nhap()" value="dang_nhap" ()>
+    <script>
+        function dang_nhap() {
+            var name = document.getElementById('name').value;
+            var name = document.getElementById('password').value;
+            var name = document.getElementById('date').value;
+            alert(name)
+            alert(password)
+            alert(date) 
+
         }
-
-      </script>
-
-
+    </script>
 </body>
 
 </html>
