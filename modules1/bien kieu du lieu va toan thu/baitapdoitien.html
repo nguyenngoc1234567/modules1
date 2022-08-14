@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    amount
+    <input type="text" id="input"><br>
+    from currency <br>
+    <select id="tien_1">
+        <option value="vnd">vnd</option>
+        <option value="usd">usd</option>
+    </select><br>
+    tucrrency <br>
+    <select id="tien_2">
+        <option value="usd">usd</option>
+        <option value="vnd">vnd</option>
+    </select><br>
+    <input onclick="covert()" type="button" value="covert">
+    <p id="show"></p>
+
+</body>
+<script>
+    function covert()
+    var input = document.getElementById('input').value;
+    console.log(input)
+    var tien_1 = document.getElementById('tien_1').value;
+    var tien_2 = document.getElementById('tien_2').value;
+    var change = 0;
+    var monny = 23000;
+    if (tien == 'tien_1'){change = 'ban chua nhap tien';
+    }else if(tien_1 == 'VND' && tien_2 == 'USD'){
+      number_fomat('change') = tien/money +'.USD';
+    }else{
+      change = tien*money + '.VND';
+    
+    document.getElementById("show").innerHTML = change;}
+  
+
+</script>
+
+
+
+</html>
