@@ -9,13 +9,13 @@
 </head>
 
 <body>
-    nhập cân nặng kg:
-    <input type="text" id='can_nang'><br>
-    nhập chiều cao :
-    <input type="text" id='chieu_cao'><br>
-    <input onclick="xu_ly()" type="button" value="kiểm tra">
+    Nhập cân nặng:(kg)
+    <input type="text" name="" id="can_nang"><br>
+    Nhập chiều cao: (m)
+    <input type="text" name="" id="chieu_cao"><br>
+    <input onclick="xu_ly()" type="button" value="kiểm tra"><br>
+    <p id="show"></p>
     <script>
-
         function xu_ly() {
             var can_nang = document.getElementById('can_nang').value;
             let chieu_cao = document.getElementById('chieu_cao').value;
@@ -35,13 +35,6 @@
             }
             document.getElementById("show").innerHTML = show;
         }
-       
-
-
-
-    
-
-
     </script>
 </body>
 
