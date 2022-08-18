@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var book_1 = ['van', 'su', 'dia']
+            //          0       1       2
+        var book_2 = ['toan', 'ly', 'hoa']
+        //              0       1       2
+        var tusach = [
+            ['van', 'su', 'dia'],
+            ['toan', 'ly', 'hoa']
+        ]
+        console.log(tusach)
+        console.log(tusach[0][1])
+        //truy xuuat hoa
+        console.log(tusach[0][2])
+// thay doi van thanh van hoc
+tusach[0][0]='van hoc';
+//them sinh
+tusach[0][3]= 'sinh'
+// them anh :push
+tusach[0].push('anh');
+// duyet mang
+ for(var i = 0 ; i< tusach.length ; i ++){
+    for ( var k =0 ;k < tusach[i].length; k++){
+        console.log(tusach[i][k])
+    }
+ }
+    </script>
+</body>
+
+</html>

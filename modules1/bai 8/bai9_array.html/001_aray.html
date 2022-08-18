@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var book_1='van';
+        // // var book_1='su';
+        // // var book_1='dia';
+        // //khai bao mang
+        // var book = ['van', 'su', 'dia']
+        // //                  0       1       2
+        // var book_2 = new Array('van', 'su', 'dia');
+        // //truy xuat phan tu
+        // console.log(book[0]);
+        // console.log(book[1]);
+        // console.log(book[2]);
+        // //xem do dai cua mag
+        // console.log(book.length);
+        // //dung vong lap 
+        // for (var i = 0; i < 3; i++) {
+        //     console.log(book[i])
+        // }
+
+        // //thay the phan tu bang gia tri moi
+
+        // book[0] = 'van hoc';
+        // book[1] = 'lich su ';
+        // book[2] = 'dia ly';
+        // console.log(book)
+        // //them phan tu 
+        // book.push('toan')
+        // book.push('vat ly')
+        // book[book.length]='hoa';
+        // console.log(book.join(","));
+        var number = [];
+
+        for (var i = 1; i <= 100; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                number.push('Fizz Buzz')
+                
+            }else if (i % 5 == 0) 
+            {
+                number.push('Buzz')
+            }else if (i %3 ==0 ) 
+            {
+                number.push('Fizz')
+            }
+            else 
+            {
+                number.push(i)
+            }
+        }
+
+        console.log(number);
+    </script>
+</body>
+
+</html>
