@@ -123,3 +123,19 @@ console.log(dao_mang(arr))
   </script>
 </body>
 </html>
+function person(name, age, gender, interests) {
+    this.name = name,
+        this.age = age,
+        this.gender = gender,
+        this.interests = interests,
+        this.work = function (work) {
+            alert(this.name + this.age + this.gender + 'dang la hoc sinh')
+        },
+        this.relax = function (relax) {
+            alert(this.name + this.age + this.gender + 'so thich la:' + this.interests[0] + 'and ' + this.interests[1])
+        }
+}
+
+console.log(person.gender);
+person.work();
+person.relax();

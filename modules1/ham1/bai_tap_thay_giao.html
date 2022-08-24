@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  /*  ===================DOI TUONG===============
+    - cu phap doi tuong
+
+    c1: tao mot doi tuong gom thong tin cua ban than
+    c2: tu doi tuong do, tao them 2 phuong thuc work va relax
+
+    - truy cap thuoc tinh
+    - truy cap phuong thuc
+
+    ===================LOP===============
+
+    - cu phap tao lop
+    - tao thuoc tinh
+    - tao phuong thuc
+
+    - khoi tao doi tuong
+    - truy cap thuoc tinh
+    - truy cap phuong thuc
+    */
+    <script>
+        let person = {
+            name :'ngoc',
+            age : 22 ,
+            gender: 'male',
+            interests :['music','game'],
+            work: function() {
+                alert(this.name[0] + this.age[0] + this.gender[0] + 'dang la hoc sinh' )
+            },
+            relax: function() {
+                alert(this.name[0] + this.age[0] + this.gender[0]+'so thich la:' +this.interests[0] + 'and ' + this.interests[1] )
+            }
+        }
+        console.log(person.name);
+
+
+
+
+
+
+
+        function person(name, age, gender, interests) {
+            this.name = name,
+                this.age = age,
+                this.gender = gender,
+                this.interests = interests,
+                this.work = function (work) {
+                    alert(this.name + this.age + this.gender + 'dang la hoc sinh')
+                },
+                this.relax = function (relax) {
+                    alert(this.name + this.age + this.gender + 'so thich la:' + this.interests[0] + 'and ' + this.interests[1])
+                }
+        }
+        var ngoc = new person('ngoc','22','male','game' );  
+        console.log(ngoc.gender);
+        // console.log(ngoc.name);
+
+
+    </script>
+</body>
+</html>
