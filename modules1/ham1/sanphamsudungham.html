@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //   let chuoi = "redder";
+        // function isPalindrome(str) {
+        //     let arr = str.split("");
+        //     let firstCharacter = arr[0];
+        //     let lastCharactor = arr[arr.length - 1];
+        //     if (firstCharacter === lastCharactor) {
+        //         arr.shift();
+        //         arr.pop();
+        //         if (isEnd(arr)) {
+        //             return true;
+        //         } else {
+        //             let newStr = arr.join("");
+        //             return isPalindrome(newStr);
+        //         }
+        //     }
+        //     return false;
+        // }
+        // function isEnd(arr) {
+        //     return arr.length === 0 || arr.length === 1;
+        // }
+        // function main() {
+        //     console.log(isPalindrome(chuoi));
+        // }
+
+
+
+        function Profile(name, age, work, interest) {
+            this.name = name,
+                this.age = age,
+                this.work = work,
+                this.interest = interest,
+                this.getWork = function (work) {
+                    return `this is ${this.work}`;
+                },
+                this.relax = function (work) {
+                    return `today, i am relax`;
+                }
+        }
+        let profile = new Profile('thắng', '19', 'student', 'game');
+        console.log(profile.getWork())
+        console.log(profile.relax())
+        console.log(profile.name)
+        console.log(profile.age)
+        console.log(profile.work)
+        console.log(profile.interest)
+    </script>
+</body>
+</html>
