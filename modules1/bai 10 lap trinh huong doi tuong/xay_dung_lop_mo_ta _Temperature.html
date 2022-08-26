@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        var Temperature = function (celsius) {
+            this.celsius =celsius
+             this.CToF = function () {
+                 return  (9*celsius)/5 + 32
+             }
+              this.ToKenvin = function () {
+                 return (celsius + 273.15 )
+                
+              }
+    
+            }
+        let c = parseInt(prompt('nhap nhiet do'))
+        let temperature = new Temperature(c)
+       console.log(temperature.CToF())
+       console.log(temperature.ToKenvin())
+    </script> -->
+
+    <!-- <script>
+        var Temperature= function(celsius){
+            this.celsius= celsius
+
+            this.CtoF =function (){
+                return (9*this.celsius)/5+32
+            }
+            this.ToKenvin = function(){
+                return (this.celsius+273.15)
+            }
+        }
+        let temperature = new Temperature(prompt('nhap nhiet do '))
+        console.log(temperature.CtoF())
+        console.log(temperature.ToKenvin())
+    </script> -->
+  <script>
+    var Temperature= function(celsius){
+        this.celsius=celsius
+        this.CtoF =function(){
+            return (9*this.celsius)/5+32
+        }
+        this.ToKenvin=function(){
+            return (this.celsius+273.15)
+        } 
+    }
+    let temperature= new Temperature(prompt('nhap nhiet do'))
+    console.log(temperature.CtoF())
+    console.log(temperature.ToKenvin())
+  </script>
+</body>
+</html>

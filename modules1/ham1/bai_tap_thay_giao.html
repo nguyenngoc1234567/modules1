@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-  /*  ===================DOI TUONG===============
+    <!-- /*  ===================DOI TUONG===============
     - cu phap doi tuong
 
     c1: tao mot doi tuong gom thong tin cua ban than
@@ -25,45 +27,166 @@
     - khoi tao doi tuong
     - truy cap thuoc tinh
     - truy cap phuong thuc
-    */
+    */ -->
     <script>
-        let person = {
-            name :'ngoc',
-            age : 22 ,
-            gender: 'male',
-            interests :['music','game'],
-            work: function() {
-                alert(this.name[0] + this.age[0] + this.gender[0] + 'dang la hoc sinh' )
-            },
-            relax: function() {
-                alert(this.name[0] + this.age[0] + this.gender[0]+'so thich la:' +this.interests[0] + 'and ' + this.interests[1] )
-            }
-        }
-        console.log(person.name);
+        // khai bao doi tuong 
+        // let person1 = {
+        //     // khai bao thuoc tinh
+        //     name: 'ngoc',
+        //     age: 22,
+        //     gender: 'male',
+        //     interests: ['music', 'game'],
+        //     // khai bao phuong thuc 
+        //     work: function () {
+        //         console.log(this.name + ' ' + this.age + '  ' + this.gender +' ' + 'dang la hoc sinh')
+        //     },
+        //     relax: function () {
+        //         console.log(this.name +' '+ this.age +' '+ this.gender +' '+ 'so thich la:'+ ' '+ this.interests[0] +' '+ 'and ' + ' '+ this.interests[1])
+        //     }
+        // }
+        // // truy cap thuoc tinh 
+        // console.log(person1.name)
+        // console.log(person1.age)
+        // console.log(person1.gender)
+        // console.log(person1.interests)
+
+        // // truy cap phuong
+        // person1.work();
+        // person1.relax();
 
 
 
 
+        // function person(name, age, gender, interests) {
+        //     //khai bao thuoc tinh
+        //     this.name = name,
+        //     this.age = age,
+        //     this.gender = gender,
+        //     this.interests = interests,
+
+        //     //khai bao phuong thuc 
+        //     this.work = function() {
+        //         console.log(`${this.name} ${this.age} ${this.gender} dang la hoc sinh`)
+        //     },
+        //     this.relax = function() {
+        //         console.log(`${this.name} ${this.age} ${this.gender} so thich la: ${this.interests[0]} and ${this.interests[1]}`)
+        //     }
+        // }
+
+        // //khoi tao doi tuong
+        // var ngoc = new person('ngoc', '22', 'male', ['music', 'game']);
+
+        // // truy cap thuoc tinh 
+        // console.log (ngoc.name)
+        // console.log(ngoc.age)
+        // console.log(ngoc.gender)
+        // console.log(ngoc.interests)
 
 
+        // // truy cap phuong thuc
+        // ngoc.relax()
 
-        function person(name, age, gender, interests) {
-            this.name = name,
-                this.age = age,
-                this.gender = gender,
-                this.interests = interests,
-                this.work = function (work) {
-                    alert(this.name + this.age + this.gender + 'dang la hoc sinh')
-                },
-                this.relax = function (relax) {
-                    alert(this.name + this.age + this.gender + 'so thich la:' + this.interests[0] + 'and ' + this.interests[1])
-                }
-        }
-        var ngoc = new person('ngoc','22','male','game' );  
-        console.log(ngoc.gender);
+        // let ngoc = {
+        //     name: 'ngoc',
+        //     age: 22,
+        //     gender: 'male',
+        //     address: 'gio linh',
+        //     Work: function () {
+
+        //     },
+        //     relax: function () {
+        //     },
+        // }
+        // //truy cap thuoc tinh
         // console.log(ngoc.name);
+        // console.log(ngoc.age);
+        // console.log(ngoc.gender);
+        // //  truy cao phuong thuc
+        // ngoc.Work()
+        // console.log(ngoc.relax)
+
+
+        // let tam = {
+        //     name: 'tam',
+        //     age: tam,
+        //     gender: 'female',
+
+        //     Work: function () {
+
+        //     },
+        //     relax: function () {
+        //     },
+        // }
+        // //truy cap thuoc tinh
+        // console.log(tam.name);
+        // console.log(tam.age);
+        // console.log(tam.gender);
+        // //  truy cao phuong thuc
+        // tam
+        //     .Work()
+        // console.log(tam.relax)
+        // //cu phap khai bao lop
+        /*
+            let class_name = function(){
+                khai bao thuoc tinh 
+                this.thuoc_tinh_1=gia_tri_1;
+                this.thuoc_tinh_=gia_tri_2;
+                khai bao phuong thuc
+                this.phuong_thuc_1=function(){
+        
+                },
+                this.phuong_thuc_2=function(){
+                    
+                }
+        
+            }
+        
+        */
+
+        let Human = function (ts_name, ts_age) {
+            this.name = ts_name;
+            this.age = ts_age;
+
+            this.Work = function () {
+
+            }
+            this.relax = function () {
+
+            }
+            //setter:thiet lap gia tri thoc tinh
+            this.setName = function (ts_name) {
+                this.name = ts_name;
+            }
+            this.setAge = function (ts_age) {
+                this.age = ts_age;
+            }
+            //getter:tra ve gia tri thuoc tinh
+            this.getName = function () {
+                return this.name
+            }
+            this.getAge = function () {
+              return this.age
+            }
+
+
+        }
+
+        let thang = new Human('thang', 19);
+        thang.setName('bao thang')
+        thang.setAge(22)
+        console.log(thang.getName());
+        console.log(thang.getAge());
+
+
+        // console.log(thang)
+        // console.log(thang.name)
+      
+// let vy = new Human('vy',19);
+// console.log('')
+// let nhan = new Human('nhan',19);
 
 
     </script>
 </body>
+
 </html>

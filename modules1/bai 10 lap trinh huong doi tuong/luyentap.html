@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="DemoCanvas" width="500" height="600"></canvas>
+    <script>
+    
+
+
+
+        //  Xây dựng lớp Hình Tròn
+
+        // let Circle = function (radius) {
+
+        //     this.radius = radius;
+
+        //     this.getRadius = function () {
+        //         return radius;
+        //     }
+        //     this.getArea = function () {
+        //         return Math.PI * radius * radius;
+        //     }
+
+
+
+
+
+        // };
+        // let circle = new Circle(prompt('dien vao'));
+        // let radius = circle.getRadius();
+
+        // let area = circle.getArea();
+        // alert("radius: " + radius + "; area: " + area);
+
+
+
+        
+        
+        
+//         class Rectangle {
+//     width;
+//     height;
+//     constructor (width,height) {
+//         this.width = width;
+//         this.height = height;
+//     }
+
+//     getWidth() {
+//         return this.width; 
+//     }
+
+//     getHeight() {
+//         return this.height;
+//     }
+
+//     setWidth(width) {
+//         this.width = width;
+//     }
+
+//     setHeight(height) {
+//         this.height = height;
+//     }
+
+//     getArea() {
+//         return this.width * this.height;
+//     }
+
+//     getPerimeter() {
+//         return (this.width + this.height) * 2;
+//     }
+// }
+// let myRectangle = new Rectangle(150,50);
+// let width = myRectangle.getWidth();
+// let height = myRectangle.getHeight();
+
+// myRectangle.setWidth(200);
+// myRectangle.getWidth();
+
+// document.write(myRectangle.getWidth());
+
+
+// let canvas = document.getElementById("DemoCanvas");
+// let ctx = canvas.getContext('2d');
+// ctx.fillStyle='#fa4b2a';
+// ctx.fillRect(10, 10, width, height)
+//  
+
+            let MyDate = function(day, month, year) {
+
+        this.day = day;
+        this.month = month;
+        this.year = year;
+        this.getDay = function() {
+           return this.day;
+                }
+        this.getMonth = function() {
+            return this.month;
+        }
+        this.getYear = function() {
+            return this.year;
+        }
+        this.setDay = function(day) {
+            this.day  = day;
+                }
+        this.setMonth = function(month) {
+            this.month  = month;
+        }
+        this.setYear = function(year) {
+            this.year  = year;
+        }
+
+        };
+        let date = new MyDate(1,1,1111);
+        date.setDay(25);
+        date.setMonth(3);
+        date.setYear(2000);
+
+        let day = date.getDay();
+
+        let month = date.getMonth(); 
+
+        let year = date.getYear(); 
+
+        alert(day + " / " + month + "  /" + year);
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
