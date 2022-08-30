@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <H1> QUẢN LÝ HỌC SINH</H1>
+    <table border="1px">
+        <tr>
+            <td colspan="2">Thông tin học viên</td>
+        </tr>
+        <tr>
+            <td>ID</td>
+            <td> <input id="id" type="text"></td>
+        </tr>
+        <tr>
+            <td>Họ tên </td>
+            <td><input id="name" type="text"></td>
+        </tr>
+        <tr>
+            <td>Ngày sinh </td>
+            <td> <input id="date" type="text"></td>
+        </tr>
+        <tr>
+            <td> Giới tính </td>
+            <td><input id="gender" type="text"></td>
+        </tr>
+        <tr>
+            <td> Lớp </td>
+            <td><input id="class" type="text"></td>
+        </tr>
+        <tr>
+            <td> học lực </td>
+            <td><input id="hocluc" type="text"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button onclick="xu_ly()" type="submit">add </button>
+                <button type="submit">save</button>
+            </td>
+        </tr>
+        <tr>
+            <span id="result"></span>
+        </tr>
+
+    </table>
+</body>
+<script>
+    var h = [];
+    function xu_ly() {
+        var id = document.getElementById('id').value;
+        var name = document.getElementById('name').value;
+        var date = document.getElementById('date').value;
+        var gender = document.getElementById('gender').value;
+        var classic = document.getElementById('class').value;
+        var result = ` ${id} ${name} ${date} ${gender} ${classic} `
+h.push(result)
+for(var i = 0 ; i<h.length;i++){
+    document.getElementById("result").innerHTML = result +'<br>';
+
+}
+    }
+
+</script>
+
+</html>
