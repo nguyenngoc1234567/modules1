@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+    <!-- <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
         Your browser does not support the HTML5 canvas tag.</canvas>
     <script>
 // var c = document.getElementById("myCanvas");
@@ -37,10 +37,94 @@ ctx.fillText("Hello World",10,50);
 // ctx.fillRect(10,10,150,80);
     
     
-    </script>
+    </script> -->
 
 
 
+<script>
+    var ngoc = {
+        name: 'ngoc',
+        age: 22,
+        gender: 'male',
+        address: 'gio linh',
+        work: function () {
+            console.log('work')
+        },
+        relax: function () {
+            return 'relax'
+        }
+    }
+    // truy cap thuoc tinh
+    console.log(ngoc.name);
+    console.log(ngoc.age);
+    console.log(ngoc.gender);
+    console.log(ngoc.address);
+
+    // truy cap phuong thuc khong co su tra ve
+    // doi_tuong.phuong_thuc_1()
+    ngoc.work()
+    // truy cap phuong thuc co su tra ve
+    //console.log(doi_tuong.phuong_thuc_2())
+    console.log(ngoc.relax())
+
+    //cu phap khai bao lop
+    let class_name = function () {
+        //khai bao thuoc tinh cua lop
+        this.thuoc_tinh_1 = gia_tri_1;
+        this.thuoc_tinh_2 = gia_tri_2;
+        //khai bao phuong thuc
+        this.phuong_thuc_1 = function () {
+
+        }
+        this.phuong_thuc_2 = function () {
+
+        }
+    }
+
+    let Human = function (ts_name, ts_age) {
+        // khai bao thuoc tinh
+        this.name = ts_name;
+        this.age = ts_age;
+        this.gender = '';
+        this.address = '';
+        // khai bao phuong thuc
+        this.work = function () {
+
+        }
+        this.relax = function () {
+
+        }
+        // setter : thiet lap gia tri thuoc tinh
+        this.setName = function (ts_name) {
+            this.name = ts_name
+        }
+        this.setAge = function (ts_age) {
+            this.age = ts_age
+        }
+        //getter : tra ve gia tri thuoc tinh
+        this.getName = function () {
+            return this.name
+        }
+        this.getAge = function () {
+            return this.age
+        }
+    }
+
+    //khoi tao doi tuong
+    // let doi_tuong_1 = new class_name();
+
+    // truy cap thuoc tinh
+    //    console.log()
+
+
+    let vy = new Human('Vy', 19);
+    vy.setName('Trieu vy');
+    vy.setAge(22);
+    console.log(vy)
+    console.log(vy.getName());
+    console.log(vy.getAge());
+
+</script>
     
 </body>
 </html>
